@@ -1,0 +1,9 @@
+name: NoArmorSwap
+description: Disabled armor swapping.
+
+author: SavageAvocado
+website: https://www.savagedev.net/
+
+main: net.savagedev.noarmorswap.NoArmorSwapPlugin
+api-version: 1.21
+version: ${version}
