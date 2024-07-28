@@ -41,18 +41,22 @@ public class NoArmorSwapPlugin extends JavaPlugin implements Listener {
 
         if (itemInHandMaterial == Material.ELYTRA && armorContents[2] != null) {
             event.setCancelled(true);
+            return;
         }
 
         if (EnchantmentTarget.ARMOR_HEAD.includes(itemInHandMaterial) && armorContents[3] != null) {
             event.setCancelled(true);
+            return;
         }
 
         if (EnchantmentTarget.ARMOR_TORSO.includes(itemInHandMaterial) && armorContents[2] != null) {
             event.setCancelled(true);
+            return;
         }
 
         if (EnchantmentTarget.ARMOR_LEGS.includes(itemInHandMaterial) && armorContents[1] != null) {
             event.setCancelled(true);
+            return;
         }
 
         if (EnchantmentTarget.ARMOR_FEET.includes(itemInHandMaterial) && armorContents[0] != null) {
